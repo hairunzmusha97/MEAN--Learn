@@ -3,37 +3,39 @@ header{
     background: #fff;
     padding: 0px;
     border-bottom: 1px solid  #e72929;
-}
+} /*Styles the main header*/
 
 a{
     color: #af1313;
-}
+} /*Styles overall a tag*/
 
 a:hover{
     background: #e72929;
     color: #fff;
     cursor: pointer;
-}
+} /*hover overall a tag*/
 
 .container{
     display: flex;
-    margin: 0px auto;justify-content:space-between;
-}
+    margin: 0px auto;
+    justify-content:space-between;
+} /*styles div class container*/
 
 a.logo{
     font-weight: bold;
     padding: 1rem;
-}
+} /*styles a tag with logo class*/
 
 ul{
     display: flex;
     list-style-type: none;
     margin: 0;
-}
+} /*styles unordered list*/
+
 ul a{
     padding: 1rem;
     display: inline-block;
-}
+} /*styles a tags in the unordered list*/
  
 a span{
     background: #ff4d4d;
@@ -41,22 +43,24 @@ a span{
     padding: 0.1rem 0.45rem;
     border-radius: 100rem;
     font-size: 0.9rem;
-}
+} /*styles span tag in the a tag*/
 
 .menu-container{
     position: relative;
-}
+} /*styles menu-container class in the list item tags*/
+
 .menu{
     position: absolute;
     z-index: 1;
     background: whitesmoke;
     display: none;
-}
+} /*styles menu class in the div tag and hide the menu items*/
+
 .menu-container:hover .menu{
     display: block;
-}
+} /*shows the menu items when hover on the menu-container*/
 
 .menu a{
     width: 100%;
     min-width: 8rem;
-}
+} /*styles a tags in the menu class*/
