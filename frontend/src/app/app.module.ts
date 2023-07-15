@@ -5,13 +5,16 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/partials/header/header.component';
 import { HomeComponent } from './component/pages/home/home.component';
 import { StarRatingComponent } from './component/partials/star-rating/star-rating.component';
+import { SearchComponent } from './component/partials/search/search.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    StarRatingComponent
+    StarRatingComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
