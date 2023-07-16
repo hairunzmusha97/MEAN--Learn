@@ -6,6 +6,7 @@ import { HeaderComponent } from './component/partials/header/header.component';
 import { HomeComponent } from './component/pages/home/home.component';
 import { StarRatingComponent } from './component/partials/star-rating/star-rating.component';
 import { SearchComponent } from './component/partials/search/search.component';
+import { TagsComponent } from './component/partials/tags/tags.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { SearchComponent } from './component/partials/search/search.component';
     HeaderComponent,
     HomeComponent,
     StarRatingComponent,
-    SearchComponent
+    SearchComponent,
+    TagsComponent
   ],
   imports: [
     BrowserModule,
