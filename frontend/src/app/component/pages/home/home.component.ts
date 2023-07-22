@@ -6,24 +6,25 @@ import { Food } from 'src/app/shared/models/food';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
-  foods:Food[] =[];
+  foods: Food[] = [];
 
-  constructor(private foodService:FoodService,activatedRoute:ActivatedRoute){
+  constructor(
+    private foodService: FoodService,
+    activatedRoute: ActivatedRoute
+  ) {
     activatedRoute.params.subscribe((params) => {
-      if(params.searchTerm)
-      this.foods = this.foodService.getAllFoodsBySearchTerm(params.searchTerm);
-      else if(params.tag)
-      this.foods = this.foodService.getAllFoodsByTag(params.tag);
-      else
-      this.foods = foodService.getAll();
-    })
-  
+      if (params.searchTerm)
+        this.foods = this.foodService.getAllFoodsBySearchTerm(
+          params.searchTerm
+        );
+      else if (params.tag)
+        this.foods = this.foodService.getAllFoodsByTag(params.tag);
+      else this.foods = foodService.getAll();
+    });
   }
 
-  ngOnInit(): void{
-
-  }
+  ngOnInit(): void {}
 }

@@ -1,13 +1,13 @@
-div{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-div a{
-    background-color: #fff;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    font-weight: normal;
-    color: blue;
+div a {
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-weight: normal;
+  color: blue;
 }
