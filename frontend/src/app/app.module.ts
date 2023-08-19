@@ -23,6 +23,8 @@ import { DefaultButtonComponent } from './component/partials/default-button/defa
 import { RegisterPageComponent } from './component/pages/register-page/register-page.component';
 import { LoadingComponent } from './component/partials/loading/loading.component';
 import { LoadingInterceptor } from './shared/interceptors/loading.interceptor';
+import { CheckoutPageComponent } from './component/pages/checkout-page/checkout-page.component';
+import { OrderItemsListComponent } from './component/partials/order-items-list/order-items-list.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,8 @@ import { LoadingInterceptor } from './shared/interceptors/loading.interceptor';
     DefaultButtonComponent,
     RegisterPageComponent,
     LoadingComponent,
+    CheckoutPageComponent,
+    OrderItemsListComponent,
   ],
   imports: [
     BrowserModule,

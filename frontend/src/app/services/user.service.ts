@@ -20,6 +20,10 @@ export class UserService {
     this.userObservable = this.userSubject.asObservable();
   }
 
+  public get currentUser(): User {
+    return this.userSubject.value;
+  }
+
   login(userLogin: IUserLogin): Observable<User> {
     return this.http.post<User>(USER_LOGIN_URL, userLogin).pipe(
       tap({
@@ -47,7 +51,7 @@ export class UserService {
           this.toastrService.success(
             `Welcome to Food Stall ${user.name}`,
             'Registration Successful'
-          )
+          );
         },
         error: (errorResponse) => {
           this.toastrService.error(errorResponse.error, 'Registration Failed');
